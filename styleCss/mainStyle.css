@@ -1,0 +1,67 @@
+/* mainStyle.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Cor de fundo suave */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Cor de fundo do container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img.normal {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333333;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+input[type="number"], input[type="submit"], input[type="button"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+input[type="submit"], input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+input.oculta {
+    display: none;
+}
+
+h3 {
+    color: #555555;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.exibe {
+    display: inline-block;
+}

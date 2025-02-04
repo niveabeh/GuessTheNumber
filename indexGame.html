@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img\dev.png">
+    <link rel="stylesheet" href="styleCss\mainStyle.css" >
+    <title>Game Number Random</title>
+</head>
+<body>
+
+    <div class="container">
+        <img src="img\happiness.png" alt="Happy" class="normal">
+        <h1>Jogo Descubra O Número</h1>
+        <form>
+            <p>Número: 
+                <input type="number" min="1" max="100" id="inNumero" required autofocus>
+                <input type="submit" value="Apostar" id="btSubmit">
+                <input type="button" value="Jogar novamente" id="btNovo" class="hidden">
+            </p>
+        </form>
+        <h3>Erros: <span id="outErros">0</span></h3>
+        <h3>Chances: <span id="outChances">6</span></h3>
+        <h3 id="outDica" class="italic">Dica: é um número entre 1 e 100</h3>
+    </div>
+    <script src="script\scriptGame.js"></script>
+</b</html>
