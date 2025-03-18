@@ -3,9 +3,9 @@ const respErros = document.querySelector("#outErros")
 const respChances = document.querySelector("#outChances")
 const respDica = document.querySelector("#outDica")
 
-const erros = [] //vetor de escopo global com números já apostados 
-const sorteado = Math.floor(Math.random() * 100) + 1 // numero aleatório entre 1 e 100
-const chances = 6 //constante definida 
+const erros = [] 
+const sorteado = Math.floor(Math.random() * 100) + 1 
+const chances = 6 
 
 frm.addEventListener("submit", (e) =>{
 
@@ -18,12 +18,12 @@ frm.addEventListener("submit", (e) =>{
         frm.btSubmit.disabled = true
         frm.btNovo.className = "exibe"
     }else{
-        if(erros.includes(numero)){ // se o numero existir no vetor "erros"
+        if(erros.includes(numero)){ 
             alert(`Você já apostou o número ${numero}. Tente outro`) 
         }else{
-            erros.push(numero) // push : empurrar. colocar. subir // no vetor erro, colocar numero escolhido
-            const numErros = erros.length //length significa comprimento ou tamanho // armareza o tamanho do vetor "erros"
-            const numChances = chances - numErros //calcular o numero de chances que ainda restam 
+            erros.push(numero) 
+            const numErros = erros.length 
+            const numChances = chances - numErros  
         
             respErros.innerText = `${numErros} (${erros.join(", ")})`
             respChances.innerText = numChances
@@ -38,8 +38,8 @@ frm.addEventListener("submit", (e) =>{
             }
         }
     }
-    frm.inNumero.value = "" //limpa o campo de entratada 
-    frm.inNumero.focus() //posiciona o cursor neste campo 
+    frm.inNumero.value = "" 
+    frm.inNumero.focus() 
 })
 frm.btNovo.addEventListener("click", ()=>{
     location.reload()
