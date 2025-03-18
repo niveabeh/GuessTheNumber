@@ -2,6 +2,9 @@
 
 Este é um simples jogo de adivinhação de números feito em JavaScript. O objetivo do jogo é adivinhar um número aleatório gerado pelo programa dentro de um intervalo de 1 a 100. 
 
+
+<img src="img/happiness.png" alt="Logo do Projeto" width="300">
+
 ## Como Jogar
 
 1. O jogador tem 6 chances para adivinhar o número.
